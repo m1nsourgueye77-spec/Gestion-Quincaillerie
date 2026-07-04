@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Gi.Code</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>📊 Tableau de bord</h1>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="stock.html">Stock</a>
+    <a href="clients.html">Clients</a>
+    <a href="fournisseurs.html">Fournisseurs</a>
+    <a href="factures.html">Factures</a>
+  </nav>
+</header>
+
+<section class="dashboard">
+
+  <div class="card">
+    <h2>📦 Produits</h2>
+    <p id="totalProducts">0</p>
+  </div>
+
+  <div class="card">
+    <h2>👥 Clients</h2>
+    <p id="totalClients">0</p>
+  </div>
+
+  <div class="card">
+    <h2>🚚 Fournisseurs</h2>
+    <p id="totalFournisseurs">0</p>
+  </div>
+
+  <div class="card">
+    <h2>📦 Stock total</h2>
+    <p id="totalStock">0</p>
+  </div>
+
+</section>
+
+<button onclick="exportData()">📤 Exporter les données</button>
+
+<script src="js/app.js"></script>
+</body>
+</html>

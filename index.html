@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestion - Quincailler - Gi.Code</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🏪 Gestion - Quincailler</h1>
+  <p>Solution numérique professionnelle by Gi.Code</p>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="produits.html">Produits</a>
+    <a href="stock.html">Stock</a>
+  <a href="clients.html">Clients</a>
+  <a href="factures.html">Factures</a>
+  <a href="tableau-de-bord.html">Tableau de bord</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Bienvenue dans votre système de gestion</h2>
+  <p>Gérez vos produits, stocks, clients et ventes facilement.</p>
+</section>
+
+<section class="search">
+  <input type="text" id="searchInput" placeholder="Rechercher un produit...">
+</section>
+
+<section class="categories">
+  <h2>Catégories</h2>
+
+  <div class="grid">
+    <div class="card">🧱 Ciment</div>
+    <div class="card">🎨 Peinture</div>
+    <div class="card">🚿 Plomberie</div>
+    <div class="card">⚡ Électricité</div>
+    <div class="card">🔩 Quincaillerie</div>
+    <div class="card">🪚 Outillage</div>
+  </div>
+</section>
+
+<section class="products">
+  <h2>Produits populaires</h2>
+
+  <div id="productList" class="grid">
+
+    <div class="product">
+      <h3>Ciment 50kg</h3>
+      <p>Prix : 4500 FCFA</p>
+      <button onclick="addToCart('Ciment 50kg', 4500)">Ajouter</button>
+    </div>
+
+    <div class="product">
+      <h3>Peinture blanche</h3>
+      <p>Prix : 7500 FCFA</p>
+      <button onclick="addToCart('Peinture blanche', 7500)">Ajouter</button>
+    </div>
+
+    <div class="product">
+      <h3>Tuyau PVC</h3>
+      <p>Prix : 2000 FCFA</p>
+      <button onclick="addToCart('Tuyau PVC', 2000)">Ajouter</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="cart">
+  <h2>🛒 Panier</h2>
+  <ul id="cartList"></ul>
+  <p>Total : <span id="total">0</span> FCFA</p>
+
+  <button onclick="saveSale()">💾 Enregistrer vente</button>
+
+  <button onclick="sendWhatsApp()">Commander via WhatsApp</button>
+</section>
+
+<footer>
+  <p>© 2026 Gestion Quincailler - Gi.Code Formation</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
